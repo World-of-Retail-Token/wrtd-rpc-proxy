@@ -9,6 +9,8 @@ Only a limited subset of bitcoin RPC methods is supported.
 
 * getbalance - Calculates the balance as a sum of balances for all managed WRT accounts.
 
+* gettransaction - Get transaction by transaction hash. Only able to return those transactions which were seen on managed accounts.
+
 * listtransactions - Returns a list of transactions that were seen on all managed accounts. A format of transaction entries is mirroring that of bitcoind.
 
 * sendtoaddress - Provides a possibility to send specified amount of WRT to specified address. Note that, unlike original bitcoin methid, this implementation doesn't allow you to send funds to addresses which are owned by current wallet. This means that you can't send funds to yourself and you're only able to use external WRT account as a recipient.
