@@ -18,3 +18,7 @@ Only a limited subset of bitcoin RPC methods is supported.
 There is a possibility to get a list of all WRT accounts which are managed by current proxy instance.
 
 * listaddresses - Returns list of account entries. Each of them contains address, HD key index and account balance. Note that root account is not included in the set.
+
+### Security tips
+
+Transactions are signed by upstream server, this means that account keys are sent to upstream server while signing transactions. Therefore, you MUST NOT use any public or third party controlled nodes to run this proxy. It's required to deploy your own WRT daemon instance and access its RPC interface either locally or via VPN connection. Though, admin privileges are required for signing operations so public nodes won't work anyway.
