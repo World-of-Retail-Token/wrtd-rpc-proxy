@@ -13,6 +13,8 @@ Only a limited subset of bitcoin RPC methods is supported.
 
 * sendtoaddress - Provides a possibility to send specified amount of WRT to specified address. Note that, unlike original bitcoin methid, this implementation doesn't allow you to send funds to addresses which are owned by current wallet. This means that you can't send funds to yourself and you're only able to use external WRT account as a recipient.
 
+* walletpassphrase - A stub, always returns null result.
+
 ### Getting internal details
 
 There is a possibility to get a list of all WRT accounts which are managed by current proxy instance.
