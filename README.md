@@ -15,6 +15,8 @@ Only a limited subset of bitcoin RPC methods is supported.
 
 * walletpassphrase - A stub, always returns null result.
 
+* encryptwallet - Just like walletpassphrase, this method does nothing.
+
 ### Getting internal details
 
 There is a possibility to get a list of all WRT accounts which are managed by current proxy instance.
