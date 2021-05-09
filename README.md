@@ -3,7 +3,7 @@ Naive implementation of bitcoin-like JSON-RPC emulator on top of WRT daemon API.
 
 ### Supported RPC methods
 
-Only a limited subset of bitcoin RPC methods is actupported.
+Only a limited subset of bitcoin RPC methods is supported.
 
 * getnewaddress - Generate new WRT account address. Account entry is then saved into database and its state is checked via upstream RPC via polling functionality.
 
