@@ -1,5 +1,5 @@
 # wrtd-rpc-proxy
-Naive implementation of bitcoin-like JSON-RPC emulator on top of WRT daemon API. Manages a set of created WRT accounts internally without a need to care about such irrelevant things. Allows you to generate multiple WRT accounts and use them simultaneously. All incoming transactions are redirected to root account which is then used for outgoing transactions.
+Naive implementation of bitcoin-like JSON-RPC emulator on top of WRT daemon API. Manages a set of created WRT accounts internally, without a need to care about such irrelevant things. Allows you to generate multiple WRT accounts and use them simultaneously. All incoming transactions are redirected to root account which is then used for outgoing transactions.
 
 ### Supported RPC methods
 
