@@ -198,7 +198,7 @@ async function gettransaction(txid) {
 
     let result = {
         txid: tx.txid,
-        address: '0x' + tx.addressOut,
+        address: tx.addressOut,
         category: (addresses.indexOf(tx.addressOut) != -1) ? 'receive' : 'send',
         amount: ((addresses.indexOf(tx.addressOut) != -1) ? 1 : -1) * tx.amount / 1,
         label: '',
