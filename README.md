@@ -28,3 +28,7 @@ There is a possibility to get a list of all WRT accounts which are managed by cu
 ### Security tips
 
 Transactions are signed by upstream server, this means that upstream server has access to corresponding account keys. Therefore, you MUST NOT use any public or third party controlled nodes to run this proxy. It's required to deploy your own WRT daemon instance and access its RPC interface either locally or via VPN connection. Though, admin privileges are required for signing operations so public nodes won't work anyway.
+
+### TODO
+
+Add subscription for incoming transactions to limit a set of checked accounts. There is no sense in checking all accounts when you can poll only those which were actually affected by user activity.
