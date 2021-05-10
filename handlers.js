@@ -198,14 +198,19 @@ async function gettransaction(txid) {
 
     let result = {
         txid: tx.txid,
-        address: tx.addressOut,
-        category: (addresses.indexOf(tx.addressOut) != -1) ? 'receive' : 'send',
         amount: ((addresses.indexOf(tx.addressOut) != -1) ? 1 : -1) * tx.amount / 1,
         label: '',
-        vout: -1,
         time: tx.blocktime,
         timereceived: tx.blocktime,
-        "bip125-replaceable": "no"
+        "bip125-replaceable": "no",
+        walletconflicts: [],
+        details: [{
+            abandoned: false,
+            address: tx.addressOut,
+            category: (addresses.indexOf(tx.addressOut) != -1) ? 'receive' : 'send',
+            amount: ((addresses.indexOf(tx.addressOut) != -1) ? 1 : -1) * tx.amount / 1,
+            vout: -1
+        }]
     };
 
     if (tx.blockheight == -1) {
